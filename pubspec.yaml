@@ -1,0 +1,49 @@
+name: home_services1
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  animate_do: ^4.2.0
+  animated_text_kit: ^4.2.3
+  auto_size_text: ^3.0.0
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+  flutter_animate: ^4.5.0
+  flutter_screenutil: ^5.9.3
+  flutter_staggered_animations: ^1.1.1
+  fluttertoast: ^8.2.12
+  go_router: ^16.1.0
+  google_fonts: ^6.0.0
+  lottie: ^3.3.1
+  pin_code_fields: ^8.0.1
+  rive: ^0.13.20
+  shimmer: ^3.0.0
+  smooth_page_indicator: ^1.2.1
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    # - assets/lottie/  # For Lottie animations if you add them
+  # Add custom fonts for better typography
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/Poppins-Regular.ttf
+  #       - asset: assets/fonts/Poppins-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/Poppins-Light.ttf
+  #         weight: 300

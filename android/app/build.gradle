@@ -1,0 +1,39 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "com.example.home_services1" // غيّر الاسم لو package مختلف
+    compileSdk 35
+    ndkVersion "25.1.8937393"
+
+    defaultConfig {
+        applicationId "com.example.home_services1" // غيّر الاسم حسب مشروعك
+        minSdk 21
+        targetSdk 35 // ✅ خليها 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    // ✅ مهم جدًا لتوحيد Java/Kotlin
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22"
+}
